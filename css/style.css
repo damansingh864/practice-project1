@@ -1,0 +1,800 @@
+/*************************************
+*             style.css
+*   Created By - Damanvir Singh
+*   Created On - Oct 18 2017
+*   Created at - 3:02 PM
+*
+*************************************/
+
+*, *:after, *:before {
+    box-sizing:border-box;
+}
+
+html,body, div, header, footer, article, section, nav, main, aside, blockquote, span, a, ul, ol, li, p, h1,h2, h3, h4, h5, h6, img, table, thead, tbody, tr, td, th, em, strong, dl, dt, dd {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:16px;
+    font-family:Arial,helvetica,sans-serif;
+}
+
+ul li {
+    list-style-type:none;
+}
+
+a {
+    text-decoration:none;
+    color:#4453a9;
+}
+
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* ---------- Global Styles ------------ */
+
+#pageWrapper {
+    height:auto;
+    width:100%;
+    position:relative;
+}
+
+.smStyles {
+    height:100%;
+    position:relative;
+    width:100%;
+}
+
+/* ------- Top Bar ------- */
+
+#topBar {
+    min-height:20px;
+    width:100%;
+    position:relative;
+    background:rgb(16, 47, 45);
+    background:rgb(11, 21, 33);
+    position:fixed;
+    z-index:4;
+}
+
+.fixedWidth {
+    width:760px;
+    height:100%;
+    position:relative;
+    margin:0 auto;
+}
+
+    /* --- MainNav --- */
+
+    #mainNav {
+        width:100%;
+        height:100%;
+        position:relative;
+        margin:0 auto;
+        text-align: center;
+    }
+
+    #mainNav ul {
+        display:inline-block;
+    }
+
+    #mainNav ul li {
+        height:100%;
+        display:inline-block;        
+        margin:0px 30px;
+        padding:26px 0px;
+    }
+
+    #mainNav ul li a {
+        text-transform:uppercase;    
+        font-size:14px;
+        color:white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .doubleBtn {
+        position:absolute;
+        bottom:60px;
+        margin:0 auto;    
+        text-align: center;
+        width:100%;        
+    }
+
+    .doubleBtn i {
+        font-size:70px;
+        color:white;
+        animation-name:move;
+        animation-duration: 2.5s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes move {
+        0% {}
+        50% {transform:translateY(55px)}
+        100% {transform:translateY(0px)}
+    }
+
+/* ------------ Main Wrapper ----------- */
+
+#main {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+#IntroCtn {
+    height:662px;
+    background:linear-gradient(0deg,rgba(40,40,40,.7) 50%,rgba(10,10,10,.7) 90%),url('../images/forest.jpeg');
+    background-size:cover;
+}
+
+.bannerCtn {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+    .BannerContentCtn {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:100%;
+        height:auto;
+        text-align: center;
+    }
+
+    .BannerContentCtn h1 {
+        font-size:65px;
+        font-family:sans-serif;
+        text-transform: uppercase;
+        color:white;
+        margin-bottom:15px;
+        letter-spacing: -1px;
+    }
+
+    p.lessTxt {
+        width:40%;
+        margin:0 auto;
+        color:white;
+        margin-top:10px;
+    }
+
+    .hd1 {
+        text-transform: uppercase;
+        font-family:cursive;
+        color:white;
+        font-size:18px;
+    }
+
+    .hd3 {
+        font-size:25px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;        
+        color:white;
+        margin-bottom:5px;
+        letter-spacing: -1px;
+    }
+
+    .hd3:after {
+        content:'';
+        display: block;
+        height:3px;
+        width:280px;
+        background:white;
+        margin:5px auto 10px;
+        border-radius:2px;
+
+    }
+
+
+/* ---------- Page Info ------------ */
+
+#PageInfo {
+    height:800px;
+}
+
+.leftInfoCtn {
+    height:100%;
+    width:37%;
+    float:left;
+    position:relative;
+}
+    .InfoimageCtn {
+        height:530px;
+        width:100%;
+        position:relative;
+        background:url('../images/original2.jpg');
+        background-size:100% 100%;
+    }
+
+    .SectionInfoCtn {
+        height:270px;
+        width:100%;
+        
+        padding:80px 50px 50px;
+    }
+
+        .hd2 {
+            font-size:35px;
+            font-family:sans-serif;
+            text-transform: uppercase;
+            color:#111;
+            margin-bottom:15px;
+            letter-spacing: -1px;
+        }
+
+        .txt1 {
+            font-size:12px;
+            font-family: Arial, Helvetica, sans-serif;
+            color:#555;
+            line-height:1.6;
+            
+        }
+        
+
+.RightInfoCtn {
+    height:100%;
+    width:63%;
+    float:left;
+}
+
+    .RightSectionInfoCtn {
+        height:300px;
+        width:100%;    
+        padding:70px 50px 50px;
+    }
+    
+    .RightSectionInfoCtn > * {
+        text-align:center;
+    }
+
+    .imageSlider {
+        height:500px;
+        width:100%;
+        position:relative;
+        background:url('../images/waterfall.jpg');
+        background-size:115% 100%;
+        background-position:right center;
+    }
+
+    .QuoteText {
+        font-style:italic;
+        font-size:13px;
+        color:#444;
+        margin-bottom:10px;
+    }
+
+    .InfoBtnCtn {
+        width:100%;
+        margin:20px 0px;
+    }
+
+    .InfoBtnCtn button {
+        padding:8px 40px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        
+        background:white;
+        border:1px solid #333;
+        font-size:16px;
+        color:#333;
+    }
+
+
+/* -------- Booking --------- */
+
+#BookCtn {    
+    height:100%;
+    background:#f5f5f5;
+}
+
+.fixedCtn {
+    position:relative;
+    height:100%;
+    width:1250px;
+    margin:0 auto;
+}
+
+.BookWrapper {
+    padding:40px 0px;
+    height:auto;
+}
+
+.BookWrapper > div {
+    float:left;
+    position:relative;
+    height:320px;
+}
+
+    .TravelSliderCtn {
+        width:42%;        
+        background:white;
+        padding:15px;        
+        box-shadow:0px 0px 5px #ccc;
+    }
+
+        .TravelSliderImage  {
+            min-height:100%;
+            width:100%;
+            background:url('../images/background1.jpg');
+            background-size:100% 100%;
+        }
+
+    .BookingInfo {
+        width:58%;
+        position:relative;
+        
+        padding:60px 0px 60px 40px;
+    }
+
+        .BookingInfoTop {
+            width:100%;
+            height:auto;
+            position:relative;
+            margin-bottom:10px;
+        }
+
+        .BookingInfoTop h3 {
+            font-size:32px;
+            font-family:sans-serif;
+            text-transform: capitalize;
+            color:#444;
+            float:left;
+            letter-spacing: -1px;
+        }
+
+        .BookingInfo button {
+            float:right;
+            background:#45a933;
+            border:0;
+            border-radius:4px;
+            padding:8px 22px;
+            color:white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .BookingInfoWrapper .txt1 {
+            color:#888;
+        }
+
+        .ReviewText {
+            font-size:12px;
+            font-style:italic;
+            color:#5494c9;            
+        }
+
+        .reviewStar {
+            font-size:25px;
+            color:#ccc;
+            margin:6px 0px 12px;
+        }
+
+
+        .BookingTravel {
+            width:100%;
+            position:relative;
+            height:auto;
+        }
+
+        .LeftBookingOption {
+            width:48%;
+            float:left;
+        }
+
+        .RightBookingOption {
+            width:48%;
+            float:right;            
+        }
+
+        .RightBookingOption > select , .LeftBookingOption > select {
+            width:100%; 
+            padding:8px 10px;
+            border:0;
+            border-radius:4px;
+            font-size:17px;   
+            font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+            text-transform:uppercase;
+            letter-spacing: -1px;
+            font-weight: bold;
+            color:#45a933;
+        }
+
+/* ------- Places Gallery -------- */
+
+#PlacesGallery {
+    height:100%;
+    width:100%;
+    position:relative;
+    margin:0 auto;
+}
+
+.LocationCtn {
+    min-height:500px;
+    width:100%;
+    position:relative;
+    margin:0 auto;
+    background:linear-gradient(0deg,rgba(50,50,50,.4) 40%, rgba(30,30,30,.6) 70%),url('../images/large1.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+.fixedCtn1 {
+    width:1080px;
+    margin:0 auto;
+    height:100%;
+    position:relative;  
+}
+
+.WrapperLocation {
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:60px 0px;
+}
+
+.WrapperLocation h2 {
+    text-align:center;
+    font-size:45px;           
+    color:white;    
+    margin-bottom:80px;
+}
+
+.AboutLocation {
+    height:250px;
+    width:100%;
+    position:relative;
+}
+
+.AboutLocation > div {
+    min-height:250px;
+    width:33.333%;
+    position:relative;
+    float:left;
+
+    padding-right:40px;
+}
+
+.LoctionContent h3 {
+    color:white;
+    font-size:30px;
+    font-weight:normal;
+}
+
+.LoctionContent h3:after {
+    content:'';
+    display:block;
+    width:50px;
+    height:3px;
+    background:white;
+    margin-top:5px;
+}
+.LoctionContent p {
+    color:white;
+}
+
+.BookNowButton {
+    text-align: center;
+    margin:10px 0px 20px;
+}
+
+.BookNowButton button {        
+    background:#45a933;
+    border:0;
+    border-radius:4px;
+    padding:8px 22px;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.GalleryImages {
+    height:280px;
+    width:100%;
+    position:relative;
+    margin:0 auto;
+
+}
+.GalleryImages > div {
+    float:left;
+    width:25%;
+    height:280px;
+    position:relative;
+    background:#141c31;
+}
+
+.GalleryImageCtn {
+    padding:4px 4px 4px 0px;    
+}
+
+.GalleryImageCtn:first-child {
+    padding-left:4px;
+}
+
+.GalleryImageCtn >div {
+    height:100%;
+}
+
+
+.GalleryImageCtn >div img {
+    height:100%;
+    width:100%;
+    background:blue;
+}
+
+/* ----- FAQ Styles ------- */
+
+#FAQWrapper {
+    height:100%;
+    width:100%;
+    position:relative;    
+}
+
+.FAQCtn {
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:80px 0px;   
+}
+
+.FAQCtn h2, .BookingInfoScheduler h2 , .BookingPrices h2, .ContactUsCtn h2{
+    text-transform: initial;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#45a933;
+}
+
+
+/* -------- Booking Information --------- */
+
+#BookingInformation {
+    height:100%;
+    width:100%;
+    position:relative;
+    background:url('../images/Booking.jpg');
+    background-size:cover;
+    background-position: top center;
+}
+
+.BookInfoWrapper {
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:70px 0px;
+}
+
+.BookingInfoScheduler h2, .BookingPrices h2 {
+    color:white;
+}
+
+.BooksInfoCtn {
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:40px 30px;
+    background:rgba(8, 42, 45, 0.71);
+}
+
+.BookingInfoScheduler, .SchedulerWrapper, .BookingPrices  {
+    width:100%;
+    height:auto;
+    position:Relative;
+    
+}
+
+.BookingInfoScheduler {
+    margin-bottom:30px; 
+}
+
+.SchedulerWrapper{
+    margin-bottom:20px;
+}
+
+.SchedulerWrapper > div {
+    width:33.333%;
+    height:100%;
+    float:left;
+    position:relative;
+}
+
+.ScheduleWrapperBox h4, .PricesBook th {
+    color:white;
+    font-size:19px;
+    margin-bottom:10px;
+    text-align: left;
+}
+ .PricesBook th {
+     padding-bottom:15px;
+ }
+
+.BooksInfoCtn p {
+    color:#f9f9f9;
+}
+
+.PricesBook {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+.PricesBook tbody tr td {
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#eee;
+    line-height:1.6;
+    padding:5px 0px;
+}
+
+
+.PricesBook tbody tr td.centerText {
+    padding-left:80px;
+}
+
+/* ------- Get in touch ------- */
+
+#GetInTouch {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+.ContactUsCtn {
+    width:75%;
+    position:relative;
+    height:100%;
+    padding:80px 0px;
+}
+
+.ContactUsCtn h2.hd2 {
+    color:#333;
+}
+
+.ContactWrapper {
+    height:100%;
+    width:100%;
+    position:relative;
+    margin-top:40px;
+}
+
+.BasicInfoCtn {
+    width:100%;
+    height:100%;
+    position:relative;  
+    margin-bottom:10px;
+}
+
+.BasicInfoCtn > div {
+    width:48%;    
+}
+
+.NameWrapper {
+    float:left;
+}
+
+.emailWrapper {
+    float:right;
+}
+
+ .NameWrapper input , .emailWrapper input {
+     width:100%;
+     padding:7px 0px;
+     border:0;
+     border-bottom:2px solid #ccc;
+     border-radius:2px;
+ }
+
+ .MessageCtn {
+     width:100%;
+     height:150px;
+     margin:40px 0px;
+ }
+
+.MessageCtn span,::placeholder {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color:#444; 
+    font-size:15px;
+}
+
+ .MessageCtn textarea {
+     margin-top:10px;
+     width:100%;
+     height: 100%;
+     border:2px solid #ccc;
+     padding:6px 10px;
+ }
+
+ .SendBtn {
+     height:100%;
+     width:100%;
+     position:relative;
+     text-align: right;
+ }
+
+ .SendBtn button {
+     padding:8px 35px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        
+        background:white;
+        border:1px solid #888;
+        font-size:13px;
+        color:#333;
+        font-weight:bold;
+ }
+
+
+ /* ------Footer --------- */
+
+ #mainFooter {
+     position:relative;
+     height:100%;
+     width:100%;     
+     background:#eee;   
+ }
+
+ .FooterNav {
+    height:200px;
+    width:100%;
+    position:relative;
+    padding:70px 0px 40px;
+ }
+
+ .FooterNav > div {
+     float:left;
+     width:23%;
+ }
+
+.FooterNav div.moreFooter {
+    width:34%;
+    padding-right:60px;
+}
+
+.FooterNav  div.navFooter{
+    width:16%;
+}
+
+ .FooterNav h2 {
+     font-size:17px;
+     font-family: Arial, Helvetica, sans-serif;
+     text-transform: uppercase;     
+     color:#222;
+ }
+
+.FooterNav h2:after {
+    content:'';
+    display:block;
+    width:30px;
+    height:2px;
+    background: #222;
+    margin:8px 0px 15px;
+}
+
+
+.navi {
+    height:100%;
+}.navi ul {
+    float:left;
+    width:50%;
+}
+
+.copyright {
+    width:100%;
+    height:100%;
+    position:relative;
+    padding:15px 0px;
+}
+
+.mapEmbed {
+    width:100%;
+    margin:20px 0px;
+}
+.mapEmbed iframe {
+    width:100%;
+}
+
+
+
